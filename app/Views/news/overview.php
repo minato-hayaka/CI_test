@@ -1,5 +1,8 @@
-<h2><?= esc($title) ?></h2>
+<?php
 
+use PhpParser\Node\Stmt\Echo_;
+?>
+<h2><?= esc($title) ?></h2>
 <?php if (! empty($news) && is_array($news)) : ?>
 
     <?php foreach ($news as $news_item): ?>
